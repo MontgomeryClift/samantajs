@@ -1,0 +1,32 @@
+{
+  "name": "samantajs",
+  "version": "0.0.1",
+  "description": "NodeJs+Asterisk+Interface",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MontgomeryClift/samantajs.git"
+  },
+  "keywords": [
+    "nodejs",
+    "asterisk",
+    "express",
+    "socket.io",
+    "http",
+    "jQuery"
+  ],
+  "author": "Salva Moya",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MontgomeryClift/samantajs/issues"
+  },
+  "homepage": "https://github.com/MontgomeryClift/samantajs#readme",
+  "dependencies": {
+    "express": "^4.13.4",
+    "http": "0.0.0",
+    "socket.io": "^1.4.6"
+  }
+}
