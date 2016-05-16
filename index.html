@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Pruebas NodeJs Server - Clients</title>
+  </head>
+  <script src="/node_modules/socket.io-client/socket.io.js"></script>
+  <script>
+  var socket = io.connect('http://192.168.13.25:8080', { 'forceNew': true });
+    function login(){
+
+      var datos = document.getElementById('text').value;
+      console.log(datos);
+      socket.emit('login', datos);
+    }
+    function logout(){
+
+      var datos = document.getElementById('text').value;
+      console.log(datos);
+      socket.emit('logout', datos);
+    }
+    function ask(){
+
+      socket.emit('ask', 'ask');
+    }
+  </script>
+  <body>
+    <input type="text" id="text" name="text"/>
+    <button onclick="login()">login </button>
+    <button onclick="logout()">logout </button>
+    <button onclick="ask()">check </button>
+  </body>
+</html>
